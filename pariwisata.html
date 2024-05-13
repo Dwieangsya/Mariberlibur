@@ -1,0 +1,3854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulau Bali</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Averia+Libre:wght@700&family=Bree+Serif&family=Coda&family=PT+Sans+Caption&family=Quantico&family=Rowdies&family=Saira+Condensed:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/lightbox.min.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "PT Sans Caption", sans-serif;
+        overflow-x: hidden;
+      }
+      .fontTitle {
+        font-family: "Saira Condensed", sans-serif;
+      }
+      .fontTitleCard {
+        font-family: "Bree Serif", serif;
+      }
+      .font .crsImg {
+        background-color: black;
+      }
+      .carouselImage {
+        opacity: 0.5;
+        height: 100vh;
+      }
+      .opacityFull {
+        z-index: 99;
+        opacity: 1 !important;
+      }
+      .fontBrand {
+        font-family: "Rowdies", cursive;
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+      .fontBrand span {
+        color: rgb(229, 255, 0);
+      }
+      .fontNav {
+        font-family: "Quantico", sans-serif;
+        letter-spacing: 2px;
+      }
+      .fontBanner {
+        font-family: "Averia Libre", cursive;
+      }
+      .let {
+        letter-spacing: 2px;
+      }
+      .text-justify {
+        text-indent: 10px;
+        text-align: justify;
+        line-height: 1.6;
+      }
+      /* navbar */
+      .bgNav {
+        padding: 10px !important;
+        background-color: rgb(46 61 77);
+      }
+      /* card */
+      .item .card img {
+        height: 260px;
+      }
+      .textCard {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+      }
+      .textCard:hover {
+        color: rgba(0, 0, 0, 0.529);
+      }
+      .highlight {
+        transition: 0.3s;
+      }
+      .highlight:hover {
+        transform: scale(1.04);
+        z-index: 999;
+      }
+      /* active list group */
+      .list-group-item.active {
+        z-index: 2;
+        color: #fff;
+        background-color: rgb(46 61 77);
+        border-color: rgb(46 61 77);
+      }
+      .bgList {
+        /* background-color: rgb(0, 45, 73); */
+        background-color: rgb(46 61 77);
+      }
+      .textList.active {
+        color: rgb(46 61 77);
+      }
+      .bgList.active {
+        background-color: rgb(229, 255, 0);
+      }
+      .hoverImg:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bgNav p-3">
+      <div class="container">
+        <a href="#" class="navbar-brand fontBrand">PULAU<span>BALI</span></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-labelledby="Toggle Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-white fontNav">
+            <li class="nav-item mx-2">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="tradisi.html" class="nav-link">Tradisi</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="#" class="nav-link active">Wisata</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="akomodasi.html" class="nav-link">Akomodasi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- owl carousel -->
+    <section>
+      <div class="container-fluid my-5">
+        <h1
+          id="titleImp"
+          class="text-center fw-bold fontTitle display-1 let mb-5"
+        >
+          DESTINATION IN BALI
+        </h1>
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/bangli/1.jpg"
+                  target="_blank"
+                  data-lightbox="wisataBangli"
+                  data-title="DESA PENGLIPURAN"
+                >
+                  <img
+                    src="img/wisata/thumb/bangli/1.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Bangli</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/denpasar/6.jpg"
+                  target="_blank"
+                  data-lightbox="wisataDenpasar"
+                  data-title="PANTAI SANUR"
+                >
+                  <img
+                    src="img/wisata/thumb/denpasar/6.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Denpasar</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/badung/6.jpg"
+                  target="_blank"
+                  data-lightbox="wisataBadung"
+                  data-title="GARUDA WISNU KENCANA"
+                >
+                  <img
+                    src="img/wisata/thumb/badung/6.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Badung</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/gianyar/1.jpg"
+                  target="_blank"
+                  data-lightbox="wisataGianyar"
+                  data-title="TAMAN NUSA"
+                >
+                  <img
+                    src="img/wisata/thumb/gianyar/1.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Gianyar</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/jembrana/1.png"
+                  target="_blank"
+                  data-lightbox="wisataJembrana"
+                  data-title="PUNCAK MAWAR DEWASANA"
+                >
+                  <img
+                    src="img/wisata/thumb/jembrana/1.png"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Jembrana</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/karangasem/1.jpg"
+                  target="_blank"
+                  data-lightbox="wisataKarangasem"
+                  data-title="TIRTA GANGGA"
+                >
+                  <img
+                    src="img/wisata/thumb/karangasem/1.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Karangasem</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/klungkung/1.jpg"
+                  target="_blank"
+                  data-lightbox="wisataKlungkung"
+                  data-title="TELETUBBIES HILL"
+                >
+                  <img
+                    src="img/wisata/thumb/Klungkung/1.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Klungkung</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/singaraja/1.jpg"
+                  target="_blank"
+                  data-lightbox="wisataSingaraja"
+                  data-title="DANAU TAMBLINGAN"
+                >
+                  <img
+                    src="img/wisata/thumb/Singaraja/1.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Singaraja</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+            <div class="item mb-2">
+              <div class="card border-0 shadow-sm">
+                <a
+                  href="img/wisata/thumb/tabanan/1.jpg"
+                  target="_blank"
+                  data-lightbox="wisataTabanan"
+                  data-title="HANDARA GOLF & RESORT"
+                >
+                  <img
+                    src="img/wisata/thumb/Tabanan/1.jpg"
+                    alt=""
+                    class="card-img-top"
+                  />
+                </a>
+                <div class="card-body">
+                  <h4 class="fontTitleCard text-center">
+                    <a href="" class="textCard">Kabupaten Tabanan</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- end Item -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pilihan Wisata-->
+    <section>
+      <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Kabupaten -->
+            <div class="col-md-4 col-lg-3 mb-5">
+              <h4 class="text-center fw-bold mb-4">KABUPATEN</h4>
+              <ul class="list-group">
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center active"
+                    id="allKab"
+                  >
+                    SEMUA KABUPATEN
+                    <span
+                      id="textAll"
+                      class="badge bgList rounded-pill fw-bolder textList active"
+                      >45</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabBadung"
+                  >
+                    BADUNG
+                    <span
+                      id="textBadung"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabBangli"
+                  >
+                    BANGLI
+                    <span
+                      id="textBangli"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabDenpasar"
+                  >
+                    DENPASAR
+                    <span
+                      id="textDenpasar"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabGianyar"
+                  >
+                    GIANYAR
+                    <span
+                      id="textGianyar"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabJembrana"
+                  >
+                    JEMBRANA
+                    <span
+                      id="textJembrana"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabKarangasem"
+                  >
+                    KARANGASEM
+                    <span
+                      id="textKarangasem"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabKlungkung"
+                  >
+                    KLUNGKUNG
+                    <span
+                      id="textKlungkung"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabSingaraja"
+                  >
+                    SINGARAJA
+                    <span
+                      id="textSingaraja"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+                <a href="#titleDest" class="text-decoration-none"
+                  ><li
+                    class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+                    id="kabTabanan"
+                  >
+                    TABANAN
+                    <span
+                      id="textTabanan"
+                      class="badge bgList rounded-pill textList"
+                      >5</span
+                    >
+                  </li>
+                </a>
+                <!-- End Kab -->
+              </ul>
+            </div>
+            <!-- Wisata -->
+            <div class="col-md-8 col-lg-9">
+              <h4 id="titleDest" class="text-center mb-4">
+                <strong>DESTINATION</strong>
+              </h4>
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 col-lg-4 kab_badung" id="BADUNG">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/badung/1.jpeg"
+                      target="_blank"
+                      data-lightbox="wisataBadung1"
+                      data-title="NUNGNUNG WATERFALL"
+                      ><img
+                        src="img/wisata/thumb/badung/1.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>NUNGNUNG WATERFALL</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 18.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 10.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Petang</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 1 -->
+                <div class="col-md-6 col-lg-4 kab_badung">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/badung/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBadung2"
+                      data-title="PANTAI SEMINYAK"
+                      ><img
+                        src="img/wisata/thumb/badung/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >PANTAI SEMINYAK
+                          <span style="visibility: hidden">dawd</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>FREE
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Seminyak</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 2 -->
+                <div class="col-md-6 col-lg-4 kab_badung">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/badung/3.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBadung3"
+                      data-title="PURA TAMAN AYUN"
+                      ><img
+                        src="img/wisata/thumb/badung/3.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >PURA TAMAN AYUN
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 18.15 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 30.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Mengwi</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 3 -->
+                <div class="col-md-6 col-lg-4 kab_badung">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/badung/4.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBadung4"
+                      data-title="SANGEH MONKEY FOREST"
+                      ><img
+                        src="img/wisata/thumb/badung/4.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>SANGEH MONKEY FOREST</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 16.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 30.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Abiansemal</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 4 -->
+                <div class="col-md-6 col-lg-4 kab_badung">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/badung/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBadung5"
+                      data-title="GARUDA WISNU KENCANA"
+                      ><img
+                        src="img/wisata/thumb/badung/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>GARUDA WISNU KENCANA </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>09.00 - 20.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 115.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Kuta Selatan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- BADUNG wisata 5 -->
+                <div class="col-md-6 col-lg-4 kab_bangli" id="BANGLI">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/bangli/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBangli1"
+                      data-title="DANAU BATUR"
+                      ><img
+                        src="img/wisata/thumb/bangli/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >DANAU BATUR
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 15.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Songan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- BANGLI wisata 6 -->
+                <div class="col-md-6 col-lg-4 kab_bangli">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/bangli/3.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBangli2"
+                      data-title="GUNUNG BATUR"
+                      ><img
+                        src="img/wisata/thumb/bangli/3.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >GUNUNG BATUR
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 15.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Batur Selatan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 7 -->
+                <div class="col-md-6 col-lg-4 kab_bangli">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/bangli/4.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBangli3"
+                      data-title="MUSEUM GEOPARK"
+                      ><img
+                        src="img/wisata/thumb/bangli/4.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >MUSEUM GEOPARK
+                          <span style="visibility: hidden">dawd</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 16.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 20.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Penelokan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 8 -->
+                <div class="col-md-6 col-lg-4 kab_bangli">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/bangli/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBangli4"
+                      data-title="DESA PENGLIPURAN"
+                      ><img
+                        src="img/wisata/thumb/bangli/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>DESA PENGLIPURAN </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.15 - 18.30 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 25.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">PENGLIPURAN</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 9 -->
+                <div class="col-md-6 col-lg-4 kab_bangli">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/bangli/6.jpg"
+                      target="_blank"
+                      data-lightbox="wisataBangli5"
+                      data-title="AIR TERJUN KUNING"
+                      ><img
+                        src="img/wisata/thumb/bangli/6.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>AIR TERJUN KUNING</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>09.00 - 17.30 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 10.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Taman Bali</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- BANGLI wisata 10 -->
+                <div class="col-md-6 col-lg-4 kab_denpasar" id="DENPASAR">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/denpasar/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataDenpasar1"
+                      data-title="TAMAN WERDHI ART CENTRE"
+                      ><img
+                        src="img/wisata/thumb/denpasar/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>TAMAN WERDHI ART CENTRE </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>07.30 - 15.30 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 25.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Denpasar Selatan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- DENPASAR wisata 11 -->
+                <div class="col-md-6 col-lg-4 kab_denpasar">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/denpasar/3.jpg"
+                      target="_blank"
+                      data-lightbox="wisataDenpasar2"
+                      data-title="BIG GARDEN CORNER"
+                      ><img
+                        src="img/wisata/thumb/denpasar/3.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>BIG GARDEN CORNER </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>09.00 - 18.00
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 30.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Kesiman</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 12 -->
+                <div class="col-md-6 col-lg-4 kab_denpasar">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/denpasar/1.jpg"
+                      target="_blank"
+                      data-lightbox="wisataDenpasar3"
+                      data-title="MONUMEN BAJRA SANDHI"
+                      ><img
+                        src="img/wisata/thumb/denpasar/1.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>MONUMEN BAJRA SANDHI</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 18.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 25.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Puputan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 13 -->
+                <div class="col-md-6 col-lg-4 kab_denpasar">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/denpasar/4.jpg"
+                      target="_blank"
+                      data-lightbox="wisataDenpasar4"
+                      data-title="MUSEUM BALI"
+                      ><img
+                        src="img/wisata/thumb/denpasar/4.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >MUSEUM BALI
+                          <span style="visibility: hidden">dawd</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>07.30 - 15.30 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 25.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Dangin Puri</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 14 -->
+                <div class="col-md-6 col-lg-4 kab_denpasar">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/denpasar/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataDenpasar5"
+                      data-title="PANTAI SANUR"
+                      ><img
+                        src="img/wisata/thumb/denpasar/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >PANTAI SANUR
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 10.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Sanur</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Denpasar wisata 15 -->
+                <div class="col-md-6 col-lg-4 kab_gianyar" id="GIANYAR">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/gianyar/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataGianyar1"
+                      data-title="BALI SAFARI & MARINE PARK"
+                      ><img
+                        src="img/wisata/thumb/gianyar/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>BALI SAFARI & MARINE PARK</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>09.00 - 21.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 250.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Serongga</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Gianyar wisata 16 -->
+                <div class="col-md-6 col-lg-4 kab_gianyar">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/gianyar/3.jpg"
+                      target="_blank"
+                      data-lightbox="wisataGianyar2"
+                      data-title="AIR TERJUN TEGENUNGAN"
+                      ><img
+                        src="img/wisata/thumb/gianyar/3.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>AIR TERJUN TEGENUNGAN </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>06.30 - 18.30 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 20.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Sukawati</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 17 -->
+                <div class="col-md-6 col-lg-4 kab_gianyar">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/gianyar/4.jpg"
+                      target="_blank"
+                      data-lightbox="wisataGianyar3"
+                      data-title="GOA GAJAH"
+                      ><img
+                        src="img/wisata/thumb/gianyar/4.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >GOA GAJAH
+                          <p style="visibility: hidden">DAWDA</p></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 50.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Bedulu</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 18 -->
+                <div class="col-md-6 col-lg-4 kab_gianyar">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/gianyar/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataGianyar4"
+                      data-title="BALI BIRD PARK"
+                      ><img
+                        src="img/wisata/thumb/gianyar/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >BALI BIRD PARK
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>09.00 - 17.30 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 140.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Singapadu</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 19 -->
+                <div class="col-md-6 col-lg-4 kab_gianyar">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/gianyar/6.jpg"
+                      target="_blank"
+                      data-lightbox="wisataGianyar5"
+                      data-title="TAMAN NUSA"
+                      ><img
+                        src="img/wisata/thumb/gianyar/6.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >TAMAN NUSA
+                          <p style="visibility: hidden">dawd</p></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>09.00 - 17.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 440.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Sidan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Gianyar wisata 20 -->
+                <div class="col-md-6 col-lg-4 kab_jembrana" id="JEMBRANA">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/jembrana/1.jpg"
+                      target="_blank"
+                      data-lightbox="wisataJembrana1"
+                      data-title="BENDUNGAN PALASARI"
+                      ><img
+                        src="img/wisata/thumb/jembrana/1.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>BENDUNGAN PALASARI </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 2.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Melaya</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Jembrana wisata 21 -->
+                <div class="col-md-6 col-lg-4 kab_jembrana">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/jembrana/3.jpg"
+                      target="_blank"
+                      data-lightbox="wisataJembrana3"
+                      data-title="AIR TERJUN JUWUK MANIS"
+                      ><img
+                        src="img/wisata/thumb/jembrana/3.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>AIR TERJUN JUWUK MANIS</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 20.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 10.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Manggissari</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 22 -->
+                <div class="col-md-6 col-lg-4 kab_jembrana">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/jembrana/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataJembrana2"
+                      data-title="PUNCAK MAWAR DEWASANA"
+                      ><img
+                        src="img/wisata/thumb/jembrana/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>PUNCAK MAWAR DEWASANA </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 17.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 10.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Pendem</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 23 -->
+                <div class="col-md-6 col-lg-4 kab_jembrana">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/jembrana/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataJembrana4"
+                      data-title="TAMAN NASIONAL BALI BARAT"
+                      ><img
+                        src="img/wisata/thumb/jembrana/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>TAMAN NASIONAL BALI BARAT </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 18.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 2.500
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Melaya</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 24 -->
+                <div class="col-md-6 col-lg-4 kab_jembrana">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/jembrana/4.jpg"
+                      target="_blank"
+                      data-lightbox="wisataJembrana5"
+                      data-title="BUNUT BOLONG"
+                      ><img
+                        src="img/wisata/thumb/jembrana/4.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >BUNUT BOLONG
+                          <span style="visibility: hidden">dawad</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>FREE
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Pekutatan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- JEMBRANA wisata 25 -->
+                <div class="col-md-6 col-lg-4 kab_karangasem" id="KARANGASEM">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/karangasem/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKarangasem1"
+                      data-title="TAMAN UJUNG"
+                      ><img
+                        src="img/wisata/thumb/karangasem/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >TAMAN UJUNG
+                          <span style="visibility: hidden">dawd</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>07.00 - 19.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 15.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Tumbu</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Karangasem wisata 26 -->
+                <div class="col-md-6 col-lg-4 kab_karangasem">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/karangasem/3.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKarangasem2"
+                      data-title="AIR TERJUN YEH LABUH"
+                      ><img
+                        src="img/wisata/thumb/karangasem/3.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>AIR TERJUN YEH LABUH </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 15.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>FREE
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Manggis</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 27 -->
+                <div class="col-md-6 col-lg-4 kab_karangasem">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/karangasem/4.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKarangasem3"
+                      data-title="TIRTA GANGGA"
+                      ><img
+                        src="img/wisata/thumb/karangasem/4.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >TIRTA GANGGA
+                          <span style="visibility: hidden"
+                            >adwadwa</span
+                          ></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 17.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 25.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Abang</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 28 -->
+                <div class="col-md-6 col-lg-4 kab_karangasem">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/karangasem/6.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKarangasem4"
+                      data-title="PANTAI BIAS TUGEL"
+                      ><img
+                        src="img/wisata/thumb/karangasem/6.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>PANTAI BIAS TUGEL </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>FREE
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Manggis</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--  wisata 29 -->
+                <div class="col-md-6 col-lg-4 kab_karangasem">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/karangasem/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKarangasem5"
+                      data-title="PURA AGUNG BESAKIH"
+                      ><img
+                        src="img/wisata/thumb/karangasem/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>PURA AGUNG BESAKIH</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 18.00
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 30.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Rendang</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- KARANGASEM wisata 30 -->
+                <div class="col-md-6 col-lg-4 kab_klungkung" id="KLUNGKUNG">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/klungkung/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKlungkung1"
+                      data-title="TIRAI AIR TERJUN TUKAD YEH UNDA"
+                      ><img
+                        src="img/wisata/thumb/klungkung/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>TIRAI AIR TERJUN TUKAD UNDA</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>07.30 - 18.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 10.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Tukad Yeh Unda</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- KLUNGKUNG wisata 31 -->
+                <div class="col-md-6 col-lg-4 kab_klungkung">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/klungkung/3.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKlungkung2"
+                      data-title="GOA JEPANG"
+                      ><img
+                        src="img/wisata/thumb/klungkung/3.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >GOA JEPANG
+                          <p style="visibility: hidden">dawd</p></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>FREE
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Banjarangkan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 32 -->
+                <div class="col-md-6 col-lg-4 kab_klungkung">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/klungkung/4.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKlungkung3"
+                      data-title="TAMAN KERTHA GOSA"
+                      ><img
+                        src="img/wisata/thumb/klungkung/4.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>TAMAN KERTHA GOSA</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 17.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 25.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Semarapura Kelod</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 33 -->
+                <div class="col-md-6 col-lg-4 kab_klungkung">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/klungkung/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKlungkung4"
+                      data-title="PURA GOA LAWAH"
+                      ><img
+                        src="img/wisata/thumb/klungkung/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >PURA GOA LAWAH
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 15.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Dawan</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 34 -->
+                <div class="col-md-6 col-lg-4 kab_klungkung">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/klungkung/6.jpg"
+                      target="_blank"
+                      data-lightbox="wisataKlungkung5"
+                      data-title="TELETUBBIES HILL"
+                      ><img
+                        src="img/wisata/thumb/klungkung/6.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >TELETUBBIES HILL
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 15.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Tanglad</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- KLUNGKUNG wisata 35 -->
+                <div class="col-md-6 col-lg-4 kab_singaraja" id="SINGARAJA">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/singaraja/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataSingaraja1"
+                      data-title="GITGIT WATERFALL"
+                      ><img
+                        src="img/wisata/thumb/singaraja/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >GITGIT WATERFALL
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 20.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Gitgit</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SINGARAJA wisata 36 -->
+                <div class="col-md-6 col-lg-4 kab_singaraja">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/singaraja/3.jpg"
+                      target="_blank"
+                      data-lightbox="wisataSingaraja2"
+                      data-title="DANAU TAMBLINGAN"
+                      ><img
+                        src="img/wisata/thumb/singaraja/3.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>DANAU TAMBLINGAN</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 10.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Munduk</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 37 -->
+                <div class="col-md-6 col-lg-4 kab_singaraja">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/singaraja/7.jpg"
+                      target="_blank"
+                      data-lightbox="wisataSingaraja3"
+                      data-title="KRISNA FUNTASTIC LAND"
+                      ><img
+                        src="img/wisata/thumb/singaraja/7.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>KRISNA FUNTASTIC LAND</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>16.00 - 22.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 15.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Seririt - Singaraja</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 38 -->
+                <div class="col-md-6 col-lg-4 kab_singaraja">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/singaraja/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataSingaraja4"
+                      data-title="PANTAI LOVINA"
+                      ><img
+                        src="img/wisata/thumb/singaraja/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >PANTAI LOVINA
+                          <span style="visibility: hidden">dawda</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>FREE
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Kalibukbuk</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 39 -->
+                <div class="col-md-6 col-lg-4 kab_singaraja">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/singaraja/6.jpg"
+                      target="_blank"
+                      data-lightbox="wisataSingaraja5"
+                      data-title="PUNCAK WANAGIRI"
+                      ><img
+                        src="img/wisata/thumb/singaraja/6.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >PUNCAK WANAGIRI
+                          <span style="visibility: hidden">awdwa</span></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>24 JAM
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 10.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Pancasari</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- SINGARAJA wisata 40 -->
+                <div class="col-md-6 col-lg-4 kab_tabanan" id="TABANAN">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/tabanan/2.jpg"
+                      target="_blank"
+                      data-lightbox="wisataTabanan1"
+                      data-title="THE BLOOMS GARDEN"
+                      ><img
+                        src="img/wisata/thumb/tabanan/2.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>THE BLOOMS GARDEN </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.30 - 18.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 30.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Baturiti</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TABANAN wisata 41 -->
+                <div class="col-md-6 col-lg-4 kab_tabanan">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/tabanan/7.jpg"
+                      target="_blank"
+                      data-lightbox="wisataTabanan2"
+                      data-title="PURA ULUN DANU BERATAN"
+                      ><img
+                        src="img/wisata/thumb/tabanan/7.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>PURA ULUN DANU BERATAN</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>07.00 - 19.00
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 30.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Baturiti</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 42 -->
+                <div class="col-md-6 col-lg-4 kab_tabanan">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/tabanan/4.jpg"
+                      target="_blank"
+                      data-lightbox="wisataTabanan3"
+                      data-title="KEBUN RAYA BEDUGUL"
+                      ><img
+                        src="img/wisata/thumb/tabanan/4.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>KEBUN RAYA BEDUGUL</strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 16.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 20.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Singapadu</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 43 -->
+                <div class="col-md-6 col-lg-4 kab_tabanan">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/tabanan/6.jpg"
+                      target="_blank"
+                      data-lightbox="wisataTabanan4"
+                      data-title="ALAS KEDATON"
+                      ><img
+                        src="img/wisata/thumb/tabanan/6.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong
+                          >ALAS KEDATON
+                          <p style="visibility: hidden">dawd</p></strong
+                        >
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>09.00 - 17.00 WITA
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 20.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Marga</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- wisata 44 -->
+                <div class="col-md-6 col-lg-4 kab_tabanan">
+                  <div class="card highlight mb-3">
+                    <a
+                      class="hoverImg"
+                      href="img/wisata/tabanan/5.jpg"
+                      target="_blank"
+                      data-lightbox="wisataTabanan5"
+                      data-title="THE SILA'S AGROTOURISM"
+                      ><img
+                        src="img/wisata/thumb/tabanan/5.jpg"
+                        alt=""
+                        class="card-img-top"
+                    /></a>
+                    <div class="card-body text-center">
+                      <h4 class="mb-3">
+                        <strong>THE SILA'S AGROTOURISM </strong>
+                      </h4>
+                      <p class="mb-4">
+                        Objek Wisata satu ini, kerap dikunjungi wisatawan jika
+                        berkunjung ke BALI
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-clock me-3"></i>08.00 - 17.00
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-ticket-detailed me-3"></i>IDR 15.000
+                      </p>
+                      <p class="text-start">
+                        <i class="bi bi-geo me-3"></i
+                        ><span class="text-center">Candikuning</span>
+                      </p>
+                      <div class="dropend">
+                        <button
+                          class="btn btn-outline-dark dropdown-toggle w-100"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Selengkapnya
+                        </button>
+                        <ul
+                          class="dropdown-menu dropdown-menu-dark"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="detail.html"
+                              >Detail</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+                              target="_blank"
+                              >Location</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Tabanan wisata 45 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-light py-3">
+      <div class="container d-flex justify-content-between">
+        <p>&copy;2022 Pulau Bali</p>
+      </div>
+    </div>
+    <!-- end of footer -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script></script>
+    <script src="bootstrap/jquery-3.6.1.min.js"></script>
+    <script>
+      $("#allKab").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_badung").fadeIn(1000);
+        $(".kab_bangli").fadeIn(1000);
+        $(".kab_denpasar").fadeIn(1000);
+        $(".kab_gianyar").fadeIn(1000);
+        $(".kab_jembrana").fadeIn(1000);
+        $(".kab_karangasem").fadeIn(1000);
+        $(".kab_klungkung").fadeIn(1000);
+        $(".kab_singaraja").fadeIn(1000);
+        $(".kab_tabanan").fadeIn(1000);
+        $("#allKab").addClass("active");
+        $("#textAll").addClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabBadung").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_badung").fadeIn(1000);
+        $("#kabBadung").addClass("active");
+        $("#textBadung").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabBangli").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_bangli").fadeIn(1000);
+        $("#kabBangli").addClass("active");
+        $("#textBangli").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabDenpasar").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_denpasar").fadeIn(1000);
+        $("#kabDenpasar").addClass("active");
+        $("#textDenpasar").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabGianyar").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_gianyar").fadeIn(1000);
+        $("#kabGianyar").addClass("active");
+        $("#textGianyar").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabJembrana").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_jembrana").fadeIn(1000);
+        $("#kabJembrana").addClass("active");
+        $("#textJembrana").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabKarangasem").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_karangasem").fadeIn(1000);
+        $("#kabKarangasem").addClass("active");
+        $("#textKarangasem").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabKlungkung").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_klungkung").fadeIn(1000);
+        $("#kabKlungkung").addClass("active");
+        $("#textKlungkung").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabSingaraja").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_singaraja").fadeIn(1000);
+        $("#kabSingaraja").addClass("active");
+        $("#textSingaraja").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabTabanan").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textTabanan").removeClass("active");
+      });
+      $("#kabTabanan").click(function () {
+        $(".kab_badung").css("display", "none");
+        $(".kab_bangli").css("display", "none");
+        $(".kab_denpasar").css("display", "none");
+        $(".kab_gianyar").css("display", "none");
+        $(".kab_jembrana").css("display", "none");
+        $(".kab_karangasem").css("display", "none");
+        $(".kab_klungkung").css("display", "none");
+        $(".kab_singaraja").css("display", "none");
+        $(".kab_tabanan").css("display", "none");
+        $(".kab_tabanan").fadeIn(1000);
+        $("#kabTabanan").addClass("active");
+        $("#textTabanan").addClass("active");
+        $("#allKab").removeClass("active");
+        $("#kabBadung").removeClass("active");
+        $("#kabBangli").removeClass("active");
+        $("#kabDenpasar").removeClass("active");
+        $("#kabGianyar").removeClass("active");
+        $("#kabJembrana").removeClass("active");
+        $("#kabKarangasem").removeClass("active");
+        $("#kabKlungkung").removeClass("active");
+        $("#kabSingaraja").removeClass("active");
+        $("#textAll").removeClass("active");
+        $("#textBadung").removeClass("active");
+        $("#textBangli").removeClass("active");
+        $("#textDenpasar").removeClass("active");
+        $("#textGianyar").removeClass("active");
+        $("#textJembrana").removeClass("active");
+        $("#textKarangasem").removeClass("active");
+        $("#textKlungkung").removeClass("active");
+        $("#textSingaraja").removeClass("active");
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplaySpeed: 500 / true,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

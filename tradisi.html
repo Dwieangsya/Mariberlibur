@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulau Bali</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Averia+Libre:wght@700&family=Coda&family=Quantico&family=Rowdies&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Coda", cursive;
+        overflow-x: hidden;
+      }
+      .otto {
+        color: white;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,
+          0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1),
+          0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3),
+          0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .crsImg {
+        background-color: black;
+      }
+      .carouselImage {
+        opacity: 0.5;
+        height: 100vh;
+      }
+      .opacityFull {
+        z-index: 99;
+        opacity: 1 !important;
+      }
+      .fontBrand {
+        font-family: "Rowdies", cursive;
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+      .fontBrand span {
+        color: rgb(229, 255, 0);
+      }
+      .fontNav {
+        font-family: "Quantico", sans-serif;
+        letter-spacing: 2px;
+      }
+      .fontBanner {
+        font-family: "Averia Libre", cursive;
+      }
+      .let {
+        letter-spacing: 2px;
+      }
+      .text-justify {
+        text-indent: 10px;
+        text-align: justify;
+        line-height: 1.6;
+      }
+      /* navbar */
+      nav {
+        transition: 0.6s;
+      }
+      .bgNav {
+        padding: 10px !important;
+        background-color: rgb(46 61 77);
+      }
+      /* banner */
+      .banner {
+        height: 90vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(img/index/banner/13.jpg);
+        background-size: cover;
+      }
+      [data-aos][data-aos][data-aos-duration="400"],
+      body[data-aos-duration="400"] [data-aos] {
+        transition-duration: 0.8s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark p-3">
+      <div class="container">
+        <a href="#" class="navbar-brand fontBrand">PULAU<span>BALI</span></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-labelledby="Toggle Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-white fontNav">
+            <li class="nav-item mx-2">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="#" class="nav-link active">Tradisi</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="pariwisata.html" class="nav-link">Wisata</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="akomodasi.html" class="nav-link">Akomodasi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner -->
+    <div
+      class="container-fluid banner d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="container text-white text-center">
+        <h1 class="fontBanner display-2 let otto">WELCOME TO BALI</h1>
+        <h1 class="fontBanner let otto">TRADISI DI BALI</h1>
+        <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+          <div class="input-group info-group-lg">
+            <select
+              class="form-select"
+              id="jenis"
+              aria-label="Example select with button addon"
+            >
+              <option selected disabled hidden>-PILIH KABUPATEN-</option>
+              <option value="Badung">Badung</option>
+              <option value="Denpasar">Denpasar</option>
+              <option value="Tabanan">Tabanan</option>
+              <option value="Singaraja">Singaraja</option>
+              <option value="Jembrana">Jembrana</option>
+              <option value="Gianyar">Gianyar</option>
+              <option value="Klungkung">Klungkung</option>
+              <option value="Bangli">Bangli</option>
+              <option value="Karangasem">Karangasem</option>
+            </select>
+            <button class="btn btn-warning" type="button" id="search">
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 1 -->
+    <div class="container-fluid py-5" id="kabBadung">
+      <div class="p-5">
+        <h1 class="h1Bad text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Badung
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Tradisi Mekotek, Desa Munggu
+            </h2>
+            <p class="text-justify">
+              Upacara Mekotek dilaksanakan dengan tujuan memohon keselamatan.
+              Upacara yang juga di kenal dengan istilah ngerebek. Mekotek ini
+              adalah warisan leluhur, adat budaya dan tradisi yang secara turun
+              temurun terus dilakukan umat Hindu di Bali.
+            </p>
+            <p class="text-justify">
+              Mekotek sendiri diambil dari kata tek-tek yang merupakan bunyi
+              kayu yang diadu satu sama lain sehingga menimbulkan bunyi.
+              Perayaan upacara Mekotek selalu dilakukan oleh warga Desa Munggu,
+              Kecamatan Mengwi, Kabupaten Badung, Bali, pada setiap Hari Raya
+              Kuningan. Selain sebagai simbol kemenangan, Mekotek juga merupakan
+              upaya untuk menolak bala yang pernah menimpa desa puluhan tahun
+              lalu.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/badung/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 2 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/badung/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Tradisi Siat Yeh, Desa Jimbaran
+            </h2>
+            <p class="text-justify">
+              Tradisi Siat Yeh ini dikatakan juga sebagai penglukatan Agung, di
+              awali dengan mendak tirta (air suci) di dua tempat sumber air yang
+              berbeda yaitu pada bagian pesisir sebelah Timur (pantai
+              Suwung/rawah) dan pesisir Sebelah Barat (pantai Segara).
+            </p>
+            <p class="text-justify">
+              Pertemuan sumber air tersebut dikenal dengan campuhan (pertemuan
+              dua sumber air), dan air campuhan biasa digunakan sebagai tempat
+              untuk melukat bagi warga Hindu Bali Namun, sekarang ini
+              berkembangnya pariwisata yang sangat pesat di kawasan
+              Jimbaran,Badung banyaknya pembangunan fasilitas pariwisata di
+              daerah tersebut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 3 -->
+    <div class="container-fluid py-5" id="kabTabanan">
+      <div class="p-5">
+        <h1 class="text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Tabanan
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Tradisi Mesuryak, Desa Bongan Gede
+            </h2>
+            <p class="text-justify">
+              Tradisi Mesuryak bermula di Kerajaan Tabanan. Kerajaan ini adalah
+              salah satu kerajaan yang menyatakan diri berdaulat penuh di Bali
+              serta merupakan kerajaan paling maju pada masanya. Mesuryak dapat
+              diartikan sebagai bersorak atau bergembira. Jadi dalam pelaksanaan
+              tradisi ini masyarakat yang menjadi peserta tentunya akan sangat
+              semangat diimbangi dengan sorak sorainya.Tradisi ini bukan hanya
+              sekedar seru-seruan belaka ton, ada tujuan dan makna kenapa
+              tradisi ini dilaksanakan secara terus menerus hingga saat ini.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/tabanan/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 4 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/tabanan/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Tradisi Siat Sambuk, Desa Pohgending
+            </h2>
+            <p class="text-justify">
+              Tradisi Siat Yeh ini dikatakan juga sebagai penglukatan Agung, di
+              awali dengan mendak tirta (air suci) di dua tempat sumber air yang
+              berbeda yaitu pada bagian pesisir sebelah Timur (pantai
+              Suwung/rawah) dan pesisir Sebelah Barat (pantai Segara).
+            </p>
+            <p class="text-justify">
+              Pertemuan sumber air tersebut dikenal dengan campuhan (pertemuan
+              dua sumber air), dan air campuhan biasa digunakan sebagai tempat
+              untuk melukat bagi warga Hindu Bali Namun, sekarang ini
+              berkembangnya pariwisata yang sangat pesat di kawasan
+              Jimbaran,Badung banyaknya pembangunan fasilitas pariwisata di
+              daerah tersebut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 5 -->
+    <div class="container-fluid py-5" id="kabSingaraja">
+      <div class="p-5">
+        <h1 class="text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Singaraja
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Tradisi Magoak-goakan, Desa Panji
+            </h2>
+            <p class="text-justify">
+              Megoak goakan adalah salah satu bukti kekayaan budaya dan tradisi
+              di bali yang masih di pertahankan kelestariannya sampai saat ini.
+              Tradisi Megoak-goakan di desa Panji Buleleng ini digelar setiap
+              tahun untuk menghormati jasa dari raja Ki Barak Panji Sakti.
+            </p>
+            <p class="text-justify">
+              Pada saat masa pemerintahan kerajaan Buleleng, beliau adalah
+              seseorang raja yang terkenal baik hati dan memiliki jiwa
+              kepemimpinan tinggi sebagai penguasa di kerajaan Buleleng, nama
+              raja ini tentunya tidak asing lagi bagi masyarakat Bali, apalagi
+              bagi warga Buleleng. Beliaulah pendiri kerajaan Buleleng pada
+              tahun 1660-an, terkenal sakti. Dan Ki Barak Panji Sakti menjadi
+              orang yang pertama kali menemukan ide sehingga lahirlah tradisi
+              Megoak-goakan tersebut.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/singaraja/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 6 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/singaraja/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Tradisi Ngoncang Guncang, Desa Pakraman Paketan
+            </h2>
+            <p class="text-justify">
+              Tradisi menumbuk padi pada lesung atau yang lebih dikenal dengan
+              istilah ngoncang, menjadi salah satu tradisi yang dilaksanakan
+              secara turun temurun oleh masyarakat Bali. Kegiatan Ngoncang
+              diartikan sebagai kegiatan adat yang dilakukan secara berkelompok
+              yang terdiri dari enam hingga delapan orang dalam satu kelompok.
+              Dimana orang orang tersebut melakukan aktivitas memukulkan alu
+              kedalam ketungan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 7 -->
+    <div class="container-fluid py-5" id="kabJembrana">
+      <div class="p-5">
+        <h1 class="text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Jembrana
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Tradisi Makepung
+            </h2>
+            <p class="text-justify">
+              Tradisi Makepung adalah permainan balapan kerbau yang dilakukan
+              masyarakat petani di Provinsi Bali, khususnya di Kabupaten
+              Jembrana.Tradisi ini telah menjadi atraksi makepung yang dikenal
+              saat ini. Atraksi makepung merupakan puncak rangkaian pesta rakyat
+              yang diselenggarakan di sebuah tempat yang disebut Arean
+              Pakepungan.
+            </p>
+            <p class="text-justify">
+              Makepung telah menjadi identitas Jembrana yang dikenal sebagai
+              'daerah buangan' bagi masyarakat 'pembangkan'. Selain itu,
+              Jembrana dikenal sebagai daerah yang heterogen dan lebih terbuka
+              terhadap perubahan. Makepung yang dikenal sebagai Lomba Pacu
+              Kerbau Khas Jembrana, sejatinya lomba ini merupakan tradisi
+              agraris sebagai salah satu bentuk penyeimbang keberadaan subak
+              sebagai organisasi pengelolaan air.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/jembrana/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 8 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/jembrana/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Tradisi Bungbung Kepyak
+            </h2>
+            <p class="text-justify">
+              Keberadaan kesenian bungbung kepyak di Banjar Kerta Jaya Pendem,
+              Jembrana, diklaim sebagai satu-satunya model bungbung kepyak di
+              Bali. Bungbung kepyak itu memiliki keunikan dibanding kesenian
+              bungbung pada umumnya, meski sama-sama untuk mengiringi tari
+              jejogedan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 9 -->
+    <div class="container-fluid py-5" id="kabGianyar">
+      <div class="p-5">
+        <h1 class="text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Gianyar
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Tradisi Ngerebeg, Desa Tegalalang
+            </h2>
+            <p class="text-justify">
+              Tradisi ngerebeg di Desa Adat Tegallalang, Kabupaten Gianyar,
+              Bali, ditetapkan sebagai Warisan Budaya Tak Benda Indonesia oleh
+              Kementerian Pendidikan, Kebudayaan, Riset dan Teknologi
+              (Kemendikbudristek).
+            </p>
+            <p class="text-justify">
+              Tradisi ini digelar sehari menjelang piodalan Pura Duur Bingin di
+              Desa Adat Tegallalang, setiap enam bulan sekali berdasarkan sistem
+              penanggalan Bali, tepatnya pada Wraspati Umanis Pahang.Tradisi ini
+              dijalani oleh anak-anak dan remaja, yang tubuhnya dipenuhi hiasan
+              menyeramkan. Mereka pun mengikuti arak-arakan keliling desa
+              sembari membawa hiasan penjor dari pelepah salak dan pelepah daun
+              jaka atau aren.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/gianyar/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 10 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/gianyar/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Tradisi Mesbes Bangke, Desa Banjar Buruan
+            </h2>
+            <p class="text-justify">
+              Awal mula tradisi mesbes bangke ini berawal dari kisah yang konon
+              katanya, dahulu penduduk asli banjar Buruan ini kebingungan untuk
+              menghilangkan bau busuk yang dikeluarkan oleh mayat, karena zaman
+              dulu tidak ada formalin, mereka harus mencari cara agar mayat
+              tidak berbau bau busuk yang dikeluarkan mayat tersebut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 11 -->
+    <div class="container-fluid py-5" id="kabDenpasar">
+      <div class="p-5">
+        <h1 class="text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Denpasar
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Tradisi Ngerebong, Desa Kesiman
+            </h2>
+            <p class="text-justify">
+              Ngerebong adalah salah satu tradisi yang masih dipegang teguh oleh
+              masyarakat Bali, khususnya oleh masyarakat yang ada di Desa
+              Kesiman, Denpasar. Tidak hanya itu, tradisi ini juga menjadi daya
+              tarik lain para wisatawan. Ngerebong sendiri merupakan bahasa Bali
+              yang memiliki arti berkumpul.
+            </p>
+            <p class="text-justify">
+              Pusat diadakannya Tradisi Ngerebong Bali berada di Pura Petilan,
+              yang terletak di daerah Kesiman. Sebelum dimulainya acara puncak,
+              biasanya masyarakat sudah memenuhi area acara. disana juga sudah
+              terdapat beberapa suguhan seperti alunan musik tradisional,
+              bunga-bungaan dalam tempayan cantik, serta penjor-penjor. Sebelum
+              upacara dimulai, para pecalang atau yang biasa disebut polisi adat
+              akan mengosongkan jalanan atau menutup jalan. Jalanan ditutup
+              sebab upacara dan serangkaian tradisi ngerebong memang sakral.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/denpasar/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 12 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/denpasar/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Tradisi Omed-omedan, Desa Sesetan
+            </h2>
+            <p class="text-justify">
+              Dari sekian banyak tradisi perayaan Hari Raya Nyepi, ada sebuah
+              tradisi unik yang hanya dapat ditemui di Banjar Kaja Sesetan, Desa
+              Sesetan, Denpasar. Tradisi tersebut bernama omed-omedan, yaitu
+              ritual saling peluk dan tarik-menarik secara bergantian antara dua
+              kelompok muda-mudi yang rutin diadakan setiap tahun pada hari
+              pertama setelah Nyepi.
+            </p>
+            <p class="text-justify">
+              Menurut salah seorang penglingsir dari Desa Sesetan, I Gusti
+              Ngurah Oka Putra, omed-omedan diperkirakan telah ada sejak abad
+              ke-17 dan terus berlangsung hingga saat ini. Menurut pewaris Puri
+              Oka yang akrab disapa Ngurah Bima ini, “omed-omedan” berasal dari
+              kata “omed” yang berarti menarik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 13 -->
+    <div class="container-fluid py-5" id="kabKlungkung">
+      <div class="p-5">
+        <h1 class="text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Klungkung
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Tradisi Tari Sanghyang Jaran, Desa Banjarangkan
+            </h2>
+            <p class="text-justify">
+              Pertunjukan Tari Sanghyang Jaran khas Desa Adat Banjarangkan
+              sangatlah sakral. Tariannya pun dipersiapkan dengan berbagai
+              upacara yang kompleks. Bendesa Adat Banjarangkan, Anak Agung Gede
+              Dharma Putra.
+            </p>
+            <p class="text-justify">
+              Setelah sembahyang berakhir, beberapa orang membentuk kelompok
+              untuk berkidung. Mereka akan duduk bersila tepat di depan bangunan
+              pelinggih pengaruman. Kelompok kidung inilah yang nantinya akan
+              melantunkan tembang ketika Sanghyang Jaran menari.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/klungkung/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 14 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/klungkung/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Mejaga jaga, Desa Pakraman Besang Kawan Tohjiwa
+            </h2>
+            <p class="text-justify">
+              Bertepatan dengan tilem sasih karo digelar tradisi mecaru
+              mejaga-jaga di Desa Pakraman Besang Kawan Tohjiwa, Kelurahan
+              Semarapura Kaja, KlungkungTradisi ini digelar tiap tahun dengan
+              tujuan untuk menghidari terjadinya malapetaka bagi warga desa.
+              Kegiatan yang dipusatkan di catus pata desa setempat.
+            </p>
+            <p class="text-justify">
+              Upacara yang dinanti nati warga setempat ini diawali sekitar pukul
+              07.00, sapi pilihan yang sudah dimandikan itu mulai diarak oleh
+              warga yang didominasi anak anak muda tersebut. Sapi yang diikat
+              dengan tujuh tali itu pertama kali diarak ke arah utara sampai di
+              ujung desa sebelah utara. Persisnya di depan Pura Puseh desa
+              setempat. Di sana, digelar proses upacara. Sapi ditebas pada
+              pantat sebelah kanan oleh pemangku catus pata.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 15 -->
+    <div class="container-fluid py-5" id="kabBangli">
+      <div class="p-5">
+        <h1 class="text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Bangli
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Tradisi Ngunying Barong Swari, Desa Abuan
+            </h2>
+            <p class="text-justify">
+              Ngunying biasa ditemukan ketika dilaksanakan upacara besar kurun
+              waktu setahun sekali. Dalam melaksanakan Ngunying menggunakan sara
+              upakara berupa ayam mentah dan dupa.
+            </p>
+            <p class="text-justify">
+              Ngunying Barong Swari mengisahkan pertemuan antara Dewa Siwa
+              dengan Dewi Uma, sehingga melahirkan seorang putra bernama Sang
+              Rare Kumara.Saat Rare Kumara besar, ia lebih dekat pada dekat
+              dengan ayah Dewa Siwa. Sementara bercengkerama bersama ibunya Dewi
+              Uma sangat jarang dilakukan.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/bangli/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 16 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/bangli/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Pesamsaman, Desa Kubu
+            </h2>
+            <p class="text-justify">
+              Wilayah Desa Adat Kubu, Kelurahan Kubu Bangli memiliki tradisi
+              unik berkaitan dengan perceraian. Tradisi yang diwariskan
+              turun-temurun ini, disebut dengan Pesamsaman atau nyapihan.
+            </p>
+            <p class="text-justify">
+              Tradisi ini dilakukan dua kali setahun, tepatnya saat sugihan
+              jawa, atau sebelum menyambut hari raya Galungan. tujuan tradisi
+              Pesamsaman karena leluhur di wilayah Kelurahan Kubu tidak
+              menginginkan ada masyarakat yang bercerai. Sedangkan makna upacara
+              Pesamsaman, adalah untuk penyucian kembali setelah melakukan
+              perceraian.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tradisi 17 -->
+    <div class="container-fluid py-5" id="kabKarangasem">
+      <div class="p-5">
+        <h1 class="text-center fw-bolder mb-5" data-aos="fade-up">
+          Kabupaten Karangasem
+        </h1>
+
+        <div class="row">
+          <div class="col-12 col-lg-5 align-self-center" data-aos="fade-right">
+            <h2 class="text-center text-lg-start fw-bolder mb-3">
+              Mageret Pandan, Desa Tenganan
+            </h2>
+            <p class="text-justify">
+              Masyarakat Desa Tenganan memiliki kepercayaan yang berbeda dari
+              umumnya masyarakat Bali.Masyarakat di Desa Tenganan menganut agama
+              Hindu Indra. Pemeluk agama Hindu Indra tidak membedakan umatnya
+              dalam kasta.
+            </p>
+            <p class="text-justify">
+              Jaman dahulu daerah Tenganan di pimpin oleh seorang raja yang
+              kejam bernama Maya Denawa.Maya Denawa menganggap dirinya sebagai
+              seorang Dewa.Selain menganggap dirinya Dewa, Maya Denata juga
+              melarang masyarakat Tenganan untuk melakukan ritual
+              keagamaan.Pengakuan Maya Denata sebagai dewa membuat murka para
+              Dewa, kemudian Dewa Indra diutus untuk melawan Maya Denata.
+            </p>
+          </div>
+          <div
+            class="col-lg-6 offset-lg-1 align-self-center d-flex flex-column justify-content-center"
+            data-aos="fade-left"
+          >
+            <img
+              src="img/tradisi/karangasem/1.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- tradisi 18 -->
+      <div class="p-5">
+        <div class="row">
+          <div
+            class="col-lg-6 align-self-center d-flex flex-column justify-content-center order-2 order-lg-1"
+            data-aos="fade-right"
+          >
+            <img
+              src="img/tradisi/karangasem/2.jpg"
+              alt=""
+              class="img-fluid rounded d-block"
+            />
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 align-self-center order-1 order-lg-2"
+            data-aos="fade-left"
+          >
+            <h2 class="text-center text-lg-end fw-bolder mb-3">
+              Tradisi Gebug Ende, Desa Seraya
+            </h2>
+            <p class="text-justify">
+              Gebug ende adalah ritual pemanggilan hujan sekaligus permainan
+              rakyat pada masyarakat Desa Seraya, Kabupaten Karangasem. Ritual
+              ini dilakukan dalam bentuk permainan oleh laki-laki dewasa maupun
+              anak-anak saat musim kemarau dan setelah berladang. Permainannya
+              menggunakan alat yang disebut gebug dan ende. Bubug.
+            </p>
+            <p class="text-justify">
+              Pasukan ini memenangkan pertempuran akibat turunnya hujan lebat,
+              yang kemudian diyakini sebagai pertolongan dari Hyang Widhi.
+              Mereka kemudian kembali ke desa masing-masing setelah perang
+              berakhir. Desa Seraya saat itu dilanda oleh kekeringan
+              berkepanjangan. Mengingat kemenangan mereka dalam perang, para
+              pasukan ini kemudian melaksanakan upacara memohon hujan kepada
+              Hyang Widhi disertai dengan permainan peperangan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-light py-3">
+      <div class="container d-flex justify-content-between">
+        <p>&copy;2022 Pulau Bali</p>
+      </div>
+    </div>
+    <!-- end of footer -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const nav = document.querySelector("nav");
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList.add("bgNav", "shadow");
+        } else {
+          nav.classList.remove("bgNav", "shadow");
+        }
+      });
+    </script>
+    <script src="bootstrap/jquery-3.6.1.min.js"></script>
+    <script>
+      $("#search").click(function () {
+        const jenis = $("#jenis").val();
+        if (jenis == "Badung") {
+          const scrollPos = $("#kabBadung").offset().top;
+          $(window).scrollTop(scrollPos);
+        } else if (jenis == "Tabanan") {
+          const scrollPos = $("#kabTabanan").offset().top;
+          $(window).scrollTop(scrollPos);
+        } else if (jenis == "Singaraja") {
+          const scrollPos = $("#kabSingaraja").offset().top;
+          $(window).scrollTop(scrollPos);
+        } else if (jenis == "Jembrana") {
+          const scrollPos = $("#kabJembrana").offset().top;
+          $(window).scrollTop(scrollPos);
+        } else if (jenis == "Denpasar") {
+          const scrollPos = $("#kabDenpasar").offset().top;
+          $(window).scrollTop(scrollPos);
+        } else if (jenis == "Klungkung") {
+          const scrollPos = $("#kabKlungkung").offset().top;
+          $(window).scrollTop(scrollPos);
+        } else if (jenis == "Bangli") {
+          const scrollPos = $("#kabBangli").offset().top;
+          $(window).scrollTop(scrollPos);
+        } else if (jenis == "Karangasem") {
+          const scrollPos = $("#kabKarangasem").offset().top;
+          $(window).scrollTop(scrollPos);
+        } else if (jenis == "Gianyar") {
+          const scrollPos = $("#kabGianyar").offset().top;
+          $(window).scrollTop(scrollPos);
+        }
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
