@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulau Bali</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Averia+Libre:wght@700&family=Bree+Serif&family=Coda&family=PT+Sans+Caption&family=Quantico&family=Rowdies&family=Saira+Condensed:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dist/css/lightbox.min.css" />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "PT Sans Caption", sans-serif;
+        overflow-x: hidden;
+      }
+      .fontTitle {
+        font-family: "Saira Condensed", sans-serif;
+      }
+      .fontTitleCard {
+        font-family: "Bree Serif", serif;
+      }
+      .font .crsImg {
+        background-color: black;
+      }
+      .carouselImage {
+        opacity: 0.5;
+        height: 100vh;
+      }
+      .opacityFull {
+        z-index: 99;
+        opacity: 1 !important;
+      }
+      .fontBrand {
+        font-family: "Rowdies", cursive;
+        font-size: 25px;
+        letter-spacing: 2px;
+      }
+      .fontBrand span {
+        color: rgb(229, 255, 0);
+      }
+      .fontNav {
+        font-family: "Quantico", sans-serif;
+        letter-spacing: 2px;
+      }
+      .fontBanner {
+        font-family: "Averia Libre", cursive;
+      }
+      .let {
+        letter-spacing: 2px;
+      }
+      .text-justify {
+        text-indent: 10px;
+        text-align: justify;
+        line-height: 1.6;
+      }
+      /* navbar */
+      .bgNav {
+        padding: 10px !important;
+        background-color: rgb(46 61 77);
+      }
+      /* card */
+      .item .card img {
+        height: 260px;
+      }
+      .textCard {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+      }
+      .textCard:hover {
+        color: rgba(0, 0, 0, 0.529);
+      }
+      .highlight {
+        transition: 0.3s;
+      }
+      .highlight:hover {
+        transform: scale(1.04);
+        z-index: 999;
+      }
+      /* active list group */
+      .list-group-item.active {
+        z-index: 2;
+        color: #fff;
+        background-color: rgb(46 61 77);
+        border-color: rgb(46 61 77);
+      }
+      .bgList {
+        /* background-color: rgb(0, 45, 73); */
+        background-color: rgb(46 61 77);
+      }
+      .textList.active {
+        color: rgb(46 61 77);
+      }
+      .bgList.active {
+        background-color: rgb(229, 255, 0);
+      }
+      .hoverImg:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bgNav p-3">
+      <div class="container">
+        <a href="#" class="navbar-brand fontBrand">PULAU<span>BALI</span></a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-target="#navbarNav"
+          data-bs-toggle="collapse"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-labelledby="Toggle Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-white fontNav">
+            <li class="nav-item mx-2">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="tradisi.html" class="nav-link">Tradisi</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="#" class="nav-link active">Wisata</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a href="akomodasi.html" class="nav-link">Akomodasi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- produk -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <!-- breadcrumb -->
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a class="text-decoration-none" href="pariwisata.html">Wisata</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-decoration-none" href="pariwisata.html#kabBadung"
+                >Badung</a
+              >
+            </li>
+            <li class="breadcrumb-item active">NUNGNUNG WATERFALL</li>
+          </ol>
+        </nav>
+        <div class="row align-items-center">
+          <!-- img -->
+          <div class="col-sm-6 col-md-5 col-lg-4">
+            <a
+              href="img/wisata/badung/1.jpeg"
+              target="_blank"
+              data-lightbox="wisataBadung"
+              data-title="NUNGNUNG WATERFALL"
+              ><img
+                src="img/wisata/thumbDetail/1.jpg"
+                class="img-fluid mb-4 rounded"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- detail -->
+          <div
+            class="col-sm-5 offset-sm-1 col-md-6 offset-md-1 col-lg-7 offset-lg-1 d-flex flex-column"
+          >
+            <h1 class="mb-4"><strong>NUNGNUNG WATERFALL</strong></h1>
+            <p class="text-justify">
+              Air terjun Nungnung pertama kali dibuka sekitar tahun 1996 dan
+              sampai sekarang selalu menjadi salah satu daftar destinasi wisata
+              alam Badung yang tidak pernah absen dikunjungi oleh wisatawan.
+              Lokasinya yang terletak pada ketinggian 900 meter di atas
+              permukaan laut (mdpl) membuat suhu di tempat ini cukup dingin.
+              Suasana hijau dan asri dari pepohonan rindang juga menambah kesan
+              alami yang eksotis.
+            </p>
+            <p class="text-justify">
+              Tidak sulit untuk menemukan lokasi Nungnung waterfall walaupun
+              berada di dataran tinggi. Salah satu petunjuk yang paling mudah
+              adalah adanya Jembatan Tukad Bangkung, karena jaraknya hanya
+              sekitar 5 kilometer saja. Saat sampai di lokasi pintu masuk area
+              air terjun Nungnung, pengunjung akan disambut dengan ratusan anak
+              tangga. Pengunjung harus melewatinya untuk menuju ke air terjun.
+            </p>
+            <a
+              href="https://www.google.co.id/maps/place/Air+Terjun+Nungnung/@-8.3297482,115.2206145,15z/data=!3m1!4b1!4m5!3m4!1s0x2dd22083c3c810e3:0x8ad87885a422e318!8m2!3d-8.3297697!4d115.2293907"
+              target="_blank"
+              type="button"
+              class="align-self-end btn btn-outline-danger btn"
+              >LOCATION</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- rekomendasi -->
+    <div class="container-fluid py-5">
+      <div class="container text-center">
+        <h1 class="fw-bold">RECOMMENDATION FOR YOU</h1>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-6 col-sm-3 col-lg-2 highlight mb-3">
+            <a href="#">
+              <img
+                src="img/wisata/thumb/badung/2.jpg"
+                class="img-fluid rounded"
+                title="PANTAI SEMINYAK"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2 highlight mb-3">
+            <a href="#">
+              <img
+                src="img/wisata/thumb/badung/3.jpg"
+                class="img-fluid rounded"
+                title="PURA TAMAN AYUN"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2 highlight mb-3">
+            <a href="#">
+              <img
+                src="img/wisata/thumb/badung/4.jpg"
+                class="img-fluid"
+                title="SANGEH MONKEY FOREST"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2 highlight mb-3">
+            <a href="#">
+              <img
+                src="img/wisata/thumb/badung/5.jpg"
+                class="img-fluid"
+                title="GARUDA WISNU KENCANA"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-dark text-light py-3">
+      <div class="container d-flex justify-content-between">
+        <p>&copy;2022 Pulau Bali</p>
+      </div>
+    </div>
+    <!-- end of footer -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script></script>
+  </body>
+</html>
